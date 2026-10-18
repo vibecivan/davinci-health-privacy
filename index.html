@@ -74,31 +74,41 @@
         <!-- Chinese Version -->
         <div id="zh" class="section">
             <h1>隱私權政策</h1>
-            <p class="subtitle">Da Vinci Health &mdash; 最後更新日期：2026 年 4 月 1 日</p>
+            <p class="subtitle">Da Vinci Health &mdash; 最後更新日期：2026 年 10 月 3 日</p>
 
             <h2>概述</h2>
-            <p>Da Vinci Health（以下簡稱「本 App」）非常重視您的隱私。本隱私權政策說明我們如何處理您在使用本 App 時的資料。</p>
+            <p>Da Vinci Health（以下簡稱「本 App」）非常重視您的隱私。本隱私權政策說明我們如何處理您在使用本 App 時的資料。簡單來說：您的資料只存在您的裝置與您自己的 iCloud 帳號中，開發者沒有伺服器，也無法讀取您的任何資料。</p>
 
-            <h2>資料收集與儲存</h2>
-            <p>本 App 的所有資料（包括飲食記錄、運動記錄、飲水量、個人資料及頭像）均<strong>僅儲存在您的裝置本機</strong>，不會上傳至任何伺服器或雲端服務。我們不會收集、傳輸或分享您的任何個人資料。</p>
+            <h2>資料儲存與 iCloud 同步</h2>
+            <p>本 App 的所有資料（包括飲食記錄、飲水量、運動記錄、睡眠記錄、個人資料與頭像、自訂食物與自訂運動）儲存在您的<strong>裝置本機</strong>，並透過 Apple 的 CloudKit 服務同步到<strong>您自己的私人 iCloud 帳號</strong>，讓資料能在您的多台裝置之間同步，並在重新安裝 App 後還原。</p>
+            <p>開發者<strong>沒有任何伺服器</strong>，也<strong>無法存取或讀取</strong>您 iCloud 中的資料。資料僅在您的裝置與 Apple iCloud 之間傳輸，受 Apple 的 iCloud 安全與隱私政策保護。我們不會收集、傳輸或分享您的任何個人資料。</p>
+            <ul>
+                <li><strong>關閉 iCloud 同步：</strong>iOS「設定」→ [您的名稱] → iCloud → 「使用 iCloud 的 App」（或「儲存至 iCloud」）→ 關閉 Da Vinci Health。關閉後，資料僅保留在裝置本機。（實際路徑可能依 iOS 版本略有不同。）</li>
+                <li><strong>刪除 iCloud 中的資料：</strong>刪除本 App <strong>不會</strong>一併刪除 iCloud 中的副本。若要移除，請至 iOS「設定」→ [您的名稱] → iCloud → 管理帳號儲存空間 → Da Vinci Health → 刪除資料。（實際路徑可能依 iOS 版本略有不同。）</li>
+            </ul>
+
+            <h2>Apple 健康（HealthKit）</h2>
+            <p>在您明確授權後，本 App 會與 Apple 健康（HealthKit）整合：</p>
+            <ul>
+                <li><strong>讀取：</strong>步數、活動熱量、睡眠分析。</li>
+                <li><strong>寫入：</strong>飲水量、飲食熱量、蛋白質、脂肪、碳水化合物，以及睡眠記錄。</li>
+            </ul>
+            <p>從 Apple 健康讀取的資料（步數、活動熱量、睡眠）<strong>只在需要顯示時即時讀取</strong>，<strong>僅用於在本 App 內顯示與計算</strong>（例如儀表板、睡眠頁面與每日健康分數），<strong>不會</strong>儲存到本 App 的資料庫，也<strong>不會</strong>同步到 iCloud。若您主動點選「匯出」，畫面上顯示的 Apple 健康睡眠也會一併寫入您選擇分享的 CSV 檔（見「資料匯出」）。您在本 App 內手動輸入的記錄（包括手動新增的睡眠）則如前一節所述儲存並同步。本 App 會將您在 App 內記錄的飲水量、飲食與睡眠寫入 Apple 健康。這些資料<strong>絕不</strong>用於廣告或行銷，<strong>絕不</strong>分享或出售給任何第三方。您可以隨時在 iOS「設定」→「健康」→「資料存取與裝置」中調整授權。</p>
+
+            <h2>資料匯出</h2>
+            <p>只有在您主動點選「匯出」時，本 App 才會產生 CSV 或 TXT 檔案，並透過 iOS 分享功能交給您自行選擇的目的地（例如「檔案」、郵件或其他 App）。除此之外，資料不會以任何其他方式離開您的裝置。</p>
 
             <h2>我們不收集的資料</h2>
             <ul>
-                <li>個人身份資訊（姓名、電子郵件等僅儲存於您的裝置）</li>
-                <li>位置資料</li>
-                <li>使用行為分析或追蹤資料</li>
-                <li>廣告識別碼</li>
-                <li>任何第三方分析或追蹤工具</li>
+                <li>不需要帳號或登入；本 App 沒有會員系統</li>
+                <li>無使用行為分析、無追蹤、無廣告識別碼</li>
+                <li>無位置資料</li>
+                <li>不使用任何第三方分析、廣告或追蹤 SDK；本 App 不包含任何廣告</li>
+                <li>個人身份資訊（姓名等）僅儲存於您的裝置與您自己的 iCloud</li>
             </ul>
 
-            <h2>App 內購買</h2>
-            <p>本 App 提供自願性的小額贊助（Tip Jar）功能，透過 Apple 的 App 內購買機制處理。所有交易均由 Apple 直接處理，我們不會存取您的付款資訊。</p>
-
-            <h2>第三方服務</h2>
-            <p>本 App 不使用任何第三方分析、廣告或追蹤服務。本 App 不包含任何廣告。</p>
-
             <h2>兒童隱私</h2>
-            <p>本 App 不針對 13 歲以下的兒童收集任何資料。由於所有資料均儲存在本機，因此不存在兒童個資外洩的風險。</p>
+            <p>本 App 不針對 13 歲以下的兒童，也不會蓄意向兒童收集任何資料。由於開發者無法存取任何使用者資料，若需移除資料，請依上述方式刪除 App 與 iCloud 中的副本。</p>
 
             <h2>隱私權政策變更</h2>
             <p>若本隱私權政策有任何變更，我們將在此頁面更新內容並修改最後更新日期。</p>
@@ -111,31 +121,41 @@
         <!-- English Version -->
         <div id="en" class="section hidden">
             <h1>Privacy Policy</h1>
-            <p class="subtitle">Da Vinci Health &mdash; Last updated: April 1, 2026</p>
+            <p class="subtitle">Da Vinci Health &mdash; Last updated: October 3, 2026</p>
 
             <h2>Overview</h2>
-            <p>Da Vinci Health ("the App") takes your privacy seriously. This Privacy Policy explains how we handle your data when you use the App.</p>
+            <p>Da Vinci Health ("the App") takes your privacy seriously. This Privacy Policy explains how we handle your data when you use the App. In short: your data lives only on your device and in your own iCloud account. The developer has no server and cannot read any of your data.</p>
 
-            <h2>Data Collection & Storage</h2>
-            <p>All data in this App (including food logs, exercise records, water intake, profile information, and profile photos) is <strong>stored locally on your device only</strong>. No data is uploaded to any server or cloud service. We do not collect, transmit, or share any of your personal data.</p>
+            <h2>Data Storage &amp; iCloud Sync</h2>
+            <p>All data in the App (including food logs, water intake, exercise records, sleep records, profile information and photo, and custom foods and exercises) is stored <strong>locally on your device</strong> and synced through Apple's CloudKit service to <strong>your own private iCloud account</strong>, so it stays in sync across your devices and can be restored after you reinstall the App.</p>
+            <p>The developer <strong>operates no servers</strong> and <strong>cannot access or read</strong> the data in your iCloud. Data travels only between your device and Apple iCloud and is protected by Apple's iCloud security and privacy policies. We do not collect, transmit, or share any of your personal data.</p>
+            <ul>
+                <li><strong>To turn iCloud sync off:</strong> iOS Settings &rarr; [your name] &rarr; iCloud &rarr; "Apps Using iCloud" (or "Saved to iCloud") &rarr; turn off Da Vinci Health. Your data then stays on the device only. (The exact path may differ by iOS version.)</li>
+                <li><strong>To delete the iCloud copy:</strong> deleting the App does <strong>not</strong> delete the copy in iCloud. To remove it, go to iOS Settings &rarr; [your name] &rarr; iCloud &rarr; Manage Account Storage &rarr; Da Vinci Health &rarr; Delete Data. (The exact path may differ by iOS version.)</li>
+            </ul>
+
+            <h2>Apple Health (HealthKit)</h2>
+            <p>With your explicit permission, the App integrates with Apple Health (HealthKit) to:</p>
+            <ul>
+                <li><strong>Read:</strong> step count, active energy, and sleep analysis.</li>
+                <li><strong>Write:</strong> water intake, dietary energy, protein, fat, carbohydrates, and sleep records.</li>
+            </ul>
+            <p>Data read from Apple Health (steps, active energy, sleep) is <strong>read on demand when it is shown</strong> and used <strong>only to display and compute inside the App</strong> (for example the dashboard, the Sleep screen and the daily Health Score). It is <strong>not</strong> stored in the App's database and <strong>not</strong> synced to iCloud. If you tap Export, the sleep shown from Apple Health is included in the CSV file you choose to share (see Data Export). Entries you type into the App yourself (including manually added sleep) are stored and synced as described in the section above. The App writes the water, food and sleep you log in the App to Apple Health. None of this data is <strong>ever</strong> used for advertising or marketing or shared with or sold to any third party. You can change this permission at any time in iOS Settings &rarr; Health &rarr; Data Access &amp; Devices.</p>
+
+            <h2>Data Export</h2>
+            <p>The App creates CSV or TXT files only when you tap Export. Those files leave your device only through the iOS share sheet, to a destination you choose (for example Files, Mail, or another app). Your data does not leave your device in any other way.</p>
 
             <h2>Data We Do Not Collect</h2>
             <ul>
-                <li>Personal identification information (name, email, etc. are stored on your device only)</li>
-                <li>Location data</li>
-                <li>Usage analytics or tracking data</li>
-                <li>Advertising identifiers</li>
-                <li>Any third-party analytics or tracking tools</li>
+                <li>No account or login is required; the App has no user accounts</li>
+                <li>No usage analytics, no tracking, no advertising identifiers</li>
+                <li>No location data</li>
+                <li>No third-party analytics, advertising, or tracking SDKs; the App contains no advertisements</li>
+                <li>Personal identification information (such as your name) is stored only on your device and in your own iCloud</li>
             </ul>
 
-            <h2>In-App Purchases</h2>
-            <p>The App offers voluntary tip jar purchases through Apple's In-App Purchase system. All transactions are processed directly by Apple. We do not access your payment information.</p>
-
-            <h2>Third-Party Services</h2>
-            <p>This App does not use any third-party analytics, advertising, or tracking services. The App contains no advertisements.</p>
-
             <h2>Children's Privacy</h2>
-            <p>This App does not collect any data from children under the age of 13. Since all data is stored locally on the device, there is no risk of children's personal data being exposed.</p>
+            <p>The App is not directed at children under the age of 13 and does not knowingly collect any data from them. Because the developer cannot access any user data, removal is done by deleting the App and its iCloud copy as described above.</p>
 
             <h2>Changes to This Policy</h2>
             <p>If we make any changes to this Privacy Policy, we will update this page and revise the "Last updated" date.</p>
